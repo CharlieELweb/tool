@@ -1,3 +1,3 @@
 # tool
 Original Tools
-[LaTeX Generator](/LaTeXGenerator)
+[LaTeX Generator](./LaTeXGenerator)
