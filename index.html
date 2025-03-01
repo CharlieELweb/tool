@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tools</title>
+        <title>LaTeX Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     </head>
-    <body>
-        <a href="/LaTeXGenerator">LaTeXGenerator</a>
 
+    <body>
+        <h1>
+            <img src="Icons/Logo.svg" class="logo">
+        </h1>
+        <div class="inputarea">
+            <div class="textBox" id="equation"></div>
+        </div>
+
+        <div class="buttons">
+                <button id="btn_addText" onclick="AddText()">
+                    <img src="Icons/Text.svg" class="icon">
+                </button>
+                <button id="btn_addFrac" onclick="AddFraction()">
+                    <img src="Icons/Fraction.svg" class="icon">
+                </button>
+                <button id="btn_addSscr" onclick="AddS_Scripts()">
+                    <img src="Icons/^_.svg" class="icon">
+                </button>
+                <button id="btn_addSum" onclick="AddSum()">
+                    <img src="Icons/Sum.svg" class="icon">
+                </button>
+                <button id="btn_addProduct" onclick="AddProduct()">
+                    <img src="Icons/Product.svg" class="icon">
+                </button>
+                <button id="btn_addLimit" onclick="AddLimit()">
+                    <img src="Icons/limit.svg" class="icon">
+                </button>
+                <button id="btn_addIntegral" onclick="AddIntegral()">
+                    <img src="Icons/Integral.svg" class="icon">
+                </button>
+                <button id="btn_addRedical" onclick="AddRedical()">
+                    <img src="Icons/Redical.svg" class="icon">
+                </button>
+                <button id="btn_addBracketsS" onclick="AddBracketsS()">
+                    <img src="Icons/BracketsS.svg" class="icon">
+                </button>
+                <button id="btn_addBracketsM" onclick="AddBracketsM()">
+                    <img src="Icons/BracketsM.svg" class="icon">
+                </button>
+                <button id="btn_addBracketsL" onclick="AddBracketsL()">
+                    <img src="Icons/BracketsL.svg" class="icon">
+                </button>
+
+                <button id="btn_addBar" onclick="AddBar()">
+                    <img src="Icons/Bar.svg" class="icon">
+                </button>
+                <button id="btn_addHat" onclick="AddHat()">
+                    <img src="Icons/Hat.svg" class="icon">
+                </button>
+            
+        </div>
+        <div>
+            <button class="textButton delete" id="clear" onclick="Clear()">Clear</button>
+            <button class="textButton" id="btn_shrink" onclick="Shrink()">Shrink</button>
+        </div>
+        
+
+        <div class="outputarea">
+            <p>Latex</p>
+            <textarea id="source"></textarea>
+            
+            <p>Result</p>
+            <div class="render" id="render"></div>
+            <div>
+                <button class="textButton" id="copy" onclick="CopySource()">Copy</button>
+                <button class="textButton" id="submit" onclick="Generate()">Refresh</button>
+            </div>
+            
+            
+        </div>
+        
+
+        <script src="script.js"></script>
+        <footer>
+            Created By CharlieEL, 2025 Feb.
+        </footer>
     </body>
+
+    
 </html>
