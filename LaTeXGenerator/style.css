@@ -33,7 +33,7 @@ p {
     justify-content: center;
     width: 100%;
     border-radius: 10px;
-    height: 100px;
+    height: 150px;
 }
 
 textarea {
@@ -43,7 +43,7 @@ textarea {
     border-radius: 10px;
     background-color: black;
     color: white;
-    min-height: 100px;
+    min-height: 50px;
 
 }
 .icon {
@@ -51,7 +51,7 @@ textarea {
 }
 
 .logo {
-    height: 3em;
+    height: 2.5em;
     margin-bottom: -50px;
 }
 button {
@@ -80,6 +80,30 @@ button:hover {
     flex-direction: row;
     align-items: center;
      */
+}
+
+.hat {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.bar {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.toppers {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: goldenrod;
+    margin: -15px;
 }
 
 .textButton {
@@ -113,12 +137,26 @@ button:hover {
     align-items: center;
 }
 
-.sscr {
+.brackets {
+    color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+
+}
+.bracketsS, .bracketsM, .bracketsL {
     display: flex;
     width: max-content;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.sscr {
+    display: flex;
+    width: max-content;
     flex-direction: column;
-    align-items: left;
+    justify-items: left;
 }
 
 .sum {
@@ -163,7 +201,6 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 15px;
     height: 70px;
 }
 
@@ -184,6 +221,7 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: max-content;
 }
 
 .inputarea {
@@ -291,6 +329,13 @@ input:hover {
     transition: all 0.5s;
     margin: 5px;
 }
+
+input.empty.shrink {
+    padding: 0px;
+    height: 10px;
+    border: 0;
+}
+
 .empty.small {
     padding: 5px;
     height: 3px;

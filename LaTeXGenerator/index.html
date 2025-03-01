@@ -39,20 +39,41 @@
                 <button id="btn_addRedical" onclick="AddRedical()">
                     <img src="Icons/Redical.svg" class="icon">
                 </button>
+                <button id="btn_addBracketsS" onclick="AddBracketsS()">
+                    <img src="Icons/BracketsS.svg" class="icon">
+                </button>
+                <button id="btn_addBracketsM" onclick="AddBracketsM()">
+                    <img src="Icons/BracketsM.svg" class="icon">
+                </button>
+                <button id="btn_addBracketsL" onclick="AddBracketsL()">
+                    <img src="Icons/BracketsL.svg" class="icon">
+                </button>
+
+                <button id="btn_addBar" onclick="AddBar()">
+                    <img src="Icons/Bar.svg" class="icon">
+                </button>
+                <button id="btn_addHat" onclick="AddHat()">
+                    <img src="Icons/Hat.svg" class="icon">
+                </button>
             
         </div>
-        
         <div>
-            <button class="textButton delete" id="remove" onclick="Remove()">Remove</button>
             <button class="textButton delete" id="clear" onclick="Clear()">Clear</button>
+            <button class="textButton" id="btn_shrink" onclick="Shrink()">Shrink</button>
         </div>
+        
+
         <div class="outputarea">
             <p>Latex</p>
             <textarea id="source"></textarea>
-            <button class="textButton" id="copy" onclick="CopySource()">Copy</button>
+            
             <p>Result</p>
             <div class="render" id="render"></div>
-            <button class="textButton" id="submit" onclick="Generate()">Refresh</button>
+            <div>
+                <button class="textButton" id="copy" onclick="CopySource()">Copy</button>
+                <button class="textButton" id="submit" onclick="Generate()">Refresh</button>
+            </div>
+            
             
         </div>
         
